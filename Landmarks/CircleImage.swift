@@ -2,20 +2,23 @@
 //  Circleimage.swift
 //  Landmarks
 //
-//  Created by Thota, Satish Kumar on 2/27/20.
-//  Copyright © 2020 Thota, Satish Kumar. All rights reserved.
+//  Created by Palacharla,Ganesh Babu on 2/27/20.
+//  Copyright © Palacharla,Ganesh Babu All rights reserved.
 //
 
 import SwiftUI
 
-struct Circleimage: View {
+struct CircleImage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image("turtlerock")
+        .clipShape(Circle())
+            .overlay(Circle().stroke(Color.gray, lineWidth: 4))
+        .shadow(radius: 10)
     }
 }
 
 struct Circleimage_Previews: PreviewProvider {
     static var previews: some View {
-        Circleimage()
+        CircleImage()
     }
 }
